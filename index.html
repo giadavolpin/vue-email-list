@@ -12,7 +12,9 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="mail in mails">{{mail}}</li>
+            <li v-if="mails.length >= 9">
+                <span v-for="(mail, index) in mails" :key="index">{{element}}</span>
+                </li>
         </ul>
     </div>
 
