@@ -18,6 +18,9 @@ const app = createApp({
             console.log(result.data.response);
             this.mails.push(result.data.response);
         })
+        for(let i = 0; i<10; i++ ){
+            this.mails();
+        }
        
     }
 
